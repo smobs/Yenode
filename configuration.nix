@@ -1,11 +1,16 @@
 { config, pkgs, ... }: with pkgs;
 
 {
+ 
   environment.systemPackages = [
-    git
-    tmux
-    neo4j
+      git
+      stdenv
+      tmux
+      neo4j 
+    ];
+ 
+  require = [
+    /vagrant/hdevenv.nix
   ];
-  require = [/vagrant/hdevenv.nix];
-
-}
+  
+ }
