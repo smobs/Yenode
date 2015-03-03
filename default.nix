@@ -11,7 +11,7 @@ cabal.mkDerivation (self: {
     yaml yesod yesodAuth yesodCore yesodForm yesodStatic
   ];
   testDepends = [ hspec yesod yesodCore yesodTest ];
-  buildTools = [cabalInstall];
+  buildTools = [cabalInstall yesodBin];
   meta = {
     license = self.stdenv.lib.licenses.free;
     platforms = self.ghc.meta.platforms;
