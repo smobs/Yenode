@@ -1,4 +1,5 @@
 {-# OPTIONS_GHC -fno-warn-orphans #-}
+{-# LANGUAGE TemplateHaskell, OverloadedStrings #-}
 module Application
     ( makeApplication
     , getApplicationDev
