@@ -1,0 +1,11 @@
+<h1> Todo
+
+<form method=post action=@{PlayR} #form enctype=#{formEnctype}>
+  ^{formWidget}
+  <button .btn .btn-primary type="submit">
+    Mirror
+
+$maybe mirrorVal <- mirror
+  <p> Your value is
+    <emph> #{mirrorVal}
+$nothing
